@@ -17,3 +17,8 @@
 ### Modelo lógico
 
 ![lógico](/database/modelagem_logica.png)
+
+
+
+https://github.com/user-attachments/assets/65eb47dc-b1a4-470d-93e0-f98e56a8fd36
+
