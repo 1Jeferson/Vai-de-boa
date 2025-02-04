@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 70px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/charlotte-noelle-98WPMlTl5xo-unsplash.jpg") no-repeat
+    center center;
+  background-size: cover;
+}
+
+.form-overlay {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .form-overlay {
+    width: 90%;
+  }
+}

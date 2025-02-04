@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vai de boa</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark p-4 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-white fs-4 text-uppercase fw-bold"
+            href="#"
+            >Vai de boa</a
+          >
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fs-4"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fs-4"
+                  href="#passagens"
+                  >Passagens</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fs-4"
+                  href="#ofertas"
+                  >Ofertas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fs-4"
+                  href="#sobre"
+                  >Sobre nós</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fs-4"
+                  href="#contato"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+            <form
+              class="d-flex"
+              role="search"
+            >
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-light fs-5 text-dark"
+                type="submit"
+              >
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-image">
+        <div class="form-overlay bg-dark">
+          <form>
+            <div class="row mb-3">
+              <div class="col form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Cidade de origem"
+                />
+                <label for="floatingInput">Cidade de origem</label>
+              </div>
+              <div class="col form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput2"
+                  placeholder="Cidade de destino"
+                />
+                <label for="floatingInput2">Cidade de destino</label>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label
+                  for="departure-date"
+                  class="form-label text-white"
+                  >Data de ida</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="departure-date"
+                />
+              </div>
+              <div class="col">
+                <label
+                  for="return-date"
+                  class="form-label text-white"
+                  >Data de volta</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="return-date"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-light w-100 mt-2"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="passagens">
+        <h2 class="text-center mt-5">Passagens aéreas</h2>
+        <div class="container mx-auto mt-4 mb-5">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/assets/sorasak-_UIN-pFfJ7c-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/sara-dubler-Koei_7yYtIo-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/uriel-soberanes-LrMWHKqilUw-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="ofertas">
+        <h2 class="text-center mt-5">Ofertas imperdiveis</h2>
+        <div class="d-flex justify-content-center flex-wrap mt-4 gap-5">
+          <div
+            class="card"
+            style="width: 18rem"
+          >
+            <img
+              src="/assets/sorasak-_UIN-pFfJ7c-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="width: 18rem"
+          >
+            <img
+              src="/assets/sara-dubler-Koei_7yYtIo-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="width: 18rem"
+          >
+            <img
+              src="/assets/uriel-soberanes-LrMWHKqilUw-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="container mt-5">
+          <h2>Vai de Boa – Sua Jornada Começa Aqui!</h2>
+          <p>
+            Seja para explorar novos destinos ou simplesmente relaxar, a
+            <b>Vai de Boa</b> está aqui para tornar sua viagem inesquecível!
+            Nossa missão é transformar cada roteiro em uma experiência única,
+            sem complicações e com total tranquilidade.
+          </p>
+          <p>
+            Com pacotes personalizados, suporte 24h e as melhores opções de
+            hospedagem e transporte, garantimos que sua viagem seja leve, segura
+            e repleta de momentos incríveis. Seja uma escapada de fim de semana
+            ou um tour internacional, <b>Vai de Boa</b> e aproveite cada segundo
+            da sua aventura!
+          </p>
+          <div
+            class="accordion accordion-flush"
+            id="accordionFlushExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Destinos imperdiveis
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Explorar novos lugares é uma das melhores experiências da
+                  vida! 🌟 Desde praias paradisíacas a cidades históricas, cada
+                  destino tem algo único a oferecer. Descubra lugares incríveis
+                  ao redor do mundo, repletos de cultura, paisagens
+                  deslumbrantes e experiências inesquecíveis. Prepare-se para
+                  sua próxima aventura! 🚀🌎
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Experiências inesquecível
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Algumas viagens vão muito além dos destinos — são momentos que
+                  ficam para sempre na memória! Seja admirando um pôr do sol em
+                  uma ilha paradisíaca, explorando ruínas ancestrais ou
+                  vivenciando novas culturas, cada experiência transforma a
+                  jornada em algo único e especial. Prepare-se para criar
+                  histórias que serão lembradas para sempre! 🌟✈️
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Tudo planejado para você viajar sem preocupações
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Relaxe e aproveite cada momento da sua viagem! Cuidamos de
+                  todos os detalhes para que você tenha uma experiência
+                  incrível, sem estresse. Desde a escolha do destino até a
+                  hospedagem e passeios, tudo é organizado para que sua única
+                  preocupação seja curtir. Viaje com tranquilidade e viva
+                  momentos inesquecíveis! 🧳✨
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white mt-5">
+      <div class="container pt-4">
+        <div class="row">
+          <div id="contato">
+            <h2>Entre em Contato</h2>
+            <div class="mb-3">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control form-input"
+                id="email"
+                placeholder="email@gmail"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensagem">Digite sua Dúvida:</label>
+              <textarea
+                class="form-control form-input"
+                id="mensagem"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Links rápidos</h6>
+            <ul>
+              <li>
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  href="#passagens"
+                  >Melhores destinos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  href="#"
+                  >Política de privacidade</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  href="#ofertas"
+                  >Promoções em alta</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  href="#sobre"
+                  >Sobre nós</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p>&copy; 2024 All Rights Reserved by Pixel Tour.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
